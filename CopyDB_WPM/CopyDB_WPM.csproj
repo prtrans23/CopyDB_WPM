@@ -60,11 +60,14 @@
   <ItemGroup>
     <Compile Include="Controller\Main\MainController.cs" />
     <Compile Include="Controller\SetDbinfoView\SetDbinfoViewController.cs" />
+    <Compile Include="Controller\SetDbinfoView\ShowDBStatusController.cs" />
     <Compile Include="DataBase\Factory\BulkCopyOptionFactory.cs" />
     <Compile Include="DataBase\Factory\ConnetionInfoFactory.cs" />
     <Compile Include="DataBase\Model\MsConnetionInfo.cs" />
     <Compile Include="DataBase\MsManger.cs" />
     <Compile Include="Util\ExceptionHander\ExceptionUserHander.cs" />
+    <Compile Include="Util\ReadFile\ResourceFinder.cs" />
+    <Compile Include="Util\ReadFile\ResourceReader.cs" />
     <Compile Include="View\Main\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +82,12 @@
     <Compile Include="View\Side\SetDBInfoView.Designer.cs">
       <DependentUpon>SetDBInfoView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Side\ShowDBStatusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Side\ShowDBStatusControl.Designer.cs">
+      <DependentUpon>ShowDBStatusControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Main\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Side\SetDBInfoView.resx">
       <DependentUpon>SetDBInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Side\ShowDBStatusControl.resx">
+      <DependentUpon>ShowDBStatusControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -135,7 +147,6 @@
     <Folder Include="Query\" />
     <Folder Include="Resources\Script\TSQL\" />
     <Folder Include="Resources\Script\YSQL\" />
-    <Folder Include="Util\ReadFile\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

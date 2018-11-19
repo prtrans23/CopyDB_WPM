@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace CopyDB_WPM.DataBase.Factory
 {
-    class ConnetionInfoFactory
+    static class ConnetionInfoFactory
     {
-        private Properties.Settings prop;
+        private static Properties.Settings prop = Properties.Settings.Default;
 
-        public ConnetionInfoFactory()
-        {
-            this.prop = Properties.Settings.Default;
-        }
-
-
-        public Model.MsConnetionInfo GetMsOriginDbInfo()
+        public static Model.MsConnetionInfo GetMsOriginDbInfo()
         {
             Model.MsConnetionInfo model = new Model.MsConnetionInfo();
 
@@ -28,7 +22,7 @@ namespace CopyDB_WPM.DataBase.Factory
             return model;
         }
 
-        public Model.MsConnetionInfo GetMsCopyDbInfo()
+        public static Model.MsConnetionInfo GetMsCopyDbInfo()
         {
             Model.MsConnetionInfo model = new Model.MsConnetionInfo();
 

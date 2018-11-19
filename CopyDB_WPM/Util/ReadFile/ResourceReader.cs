@@ -7,17 +7,12 @@ using System.Threading.Tasks;
 
 namespace CopyDB_WPM.Util.ReadFile
 {
-    class ResourceReader
+    public static class ResourceReader
     {
-        public static string ReadSqlFileToStr(string fileName)
+        public static string GetTsqlQueryFile(string section, string fileName)
         {
-            //var value = Properties.Resources.ResourceManager.GetObject(fileName, Properties.Resources.Culture);
-
-            var type = typeof(Properties.Resources);
-            var property = type.GetProperty(fileName, BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public);
-            var value = property.GetValue(null, null);
-
-            return (string)value;
+            string path = ResourceFinder.Get_TSQL_Path(section, fileName);
+            return System.IO.File.ReadAllText(path);
         }
     }
 }

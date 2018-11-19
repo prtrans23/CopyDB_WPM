@@ -54,7 +54,8 @@ namespace CopyDB_WPM
 
         private void metroTile_CheckServer_Click(object sender, EventArgs e)
         {
-
+            controller.CheckAndClearView();
+            controller.OpenServerStatus();
         }
 
         private void metroTile_Copy_Click(object sender, EventArgs e)

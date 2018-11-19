@@ -21,13 +21,26 @@ namespace CopyDB_WPM.DataBase
             this.connetionString = connetionInfo.GetConnetionString();
         }
 
+        public string GetConnetionString()
+        {
+            return connetionString;
+        }
+
        
 
         public ConnectionState CheckConnetion()
         {
-            SqlConnection connection = new SqlConnection(connetionString);
-            return connection.State;
+            ConnectionState state;
+
+            using (SqlConnection connection = new SqlConnection(connetionString))
+            {
+                connection.Open();
+                state = connection.State;
+            }
+
+            return state;
         }
+
 
 
         // Nomal Option (Non Try)

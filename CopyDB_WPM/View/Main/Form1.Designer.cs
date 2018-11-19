@@ -53,7 +53,7 @@
             // 
             this.metroTile_Target.ActiveControl = null;
             this.metroTile_Target.BackColor = System.Drawing.Color.DarkGray;
-            this.metroTile_Target.Location = new System.Drawing.Point(140, 63);
+            this.metroTile_Target.Location = new System.Drawing.Point(189, 63);
             this.metroTile_Target.Name = "metroTile_Target";
             this.metroTile_Target.Size = new System.Drawing.Size(95, 74);
             this.metroTile_Target.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             this.metroTile_CheckData.ActiveControl = null;
             this.metroTile_CheckData.BackColor = System.Drawing.Color.DarkGray;
-            this.metroTile_CheckData.Location = new System.Drawing.Point(443, 63);
+            this.metroTile_CheckData.Location = new System.Drawing.Point(492, 63);
             this.metroTile_CheckData.Name = "metroTile_CheckData";
             this.metroTile_CheckData.Size = new System.Drawing.Size(95, 74);
             this.metroTile_CheckData.TabIndex = 0;
@@ -97,7 +97,7 @@
             // 
             this.metroTile_CheckServer.ActiveControl = null;
             this.metroTile_CheckServer.BackColor = System.Drawing.Color.DarkGray;
-            this.metroTile_CheckServer.Location = new System.Drawing.Point(241, 63);
+            this.metroTile_CheckServer.Location = new System.Drawing.Point(290, 63);
             this.metroTile_CheckServer.Name = "metroTile_CheckServer";
             this.metroTile_CheckServer.Size = new System.Drawing.Size(95, 74);
             this.metroTile_CheckServer.TabIndex = 0;
@@ -119,7 +119,7 @@
             // 
             this.metroTile_Copy.ActiveControl = null;
             this.metroTile_Copy.BackColor = System.Drawing.Color.DarkGray;
-            this.metroTile_Copy.Location = new System.Drawing.Point(342, 63);
+            this.metroTile_Copy.Location = new System.Drawing.Point(391, 63);
             this.metroTile_Copy.Name = "metroTile_Copy";
             this.metroTile_Copy.Size = new System.Drawing.Size(95, 74);
             this.metroTile_Copy.TabIndex = 0;
@@ -140,7 +140,7 @@
             // 
             this.metroTile_Origin.ActiveControl = null;
             this.metroTile_Origin.BackColor = System.Drawing.Color.DarkGray;
-            this.metroTile_Origin.Location = new System.Drawing.Point(39, 63);
+            this.metroTile_Origin.Location = new System.Drawing.Point(88, 63);
             this.metroTile_Origin.Name = "metroTile_Origin";
             this.metroTile_Origin.Size = new System.Drawing.Size(95, 74);
             this.metroTile_Origin.TabIndex = 0;

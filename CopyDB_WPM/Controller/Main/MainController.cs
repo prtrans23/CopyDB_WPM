@@ -22,6 +22,12 @@ namespace CopyDB_WPM.Controller.Main
             form.metroPanel_Target.Controls.Add(myControl);
         }
 
+        public void OpenServerStatus()
+        {
+            var myControl = new View.Side.ShowDBStatusControl();
+            form.metroPanel_Target.Controls.Add(myControl);
+        }
+
         public void CheckAndClearView()
         {
             int viewCount = form.metroPanel_Target.Controls.Count;
