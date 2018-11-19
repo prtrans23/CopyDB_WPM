@@ -83,6 +83,26 @@ namespace CopyDB_WPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_analyze_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_analyze_26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_analyze_52 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_analyze_52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_data_recovery_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-data-recovery-26", resourceCulture);
@@ -116,6 +136,26 @@ namespace CopyDB_WPM.Properties {
         internal static System.Drawing.Bitmap icons8_server_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-server-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_up_2_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_up_2_26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_up_2_52 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_up_2_52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

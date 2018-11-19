@@ -46,14 +46,8 @@ namespace CopyDB_WPM.Controller.SetDbinfoView
                 case ConnectionState.Open:
                     c = Color.Green;
                     break;
-                case ConnectionState.Broken:
-                    c = Color.Red;
-                    break;
-                case ConnectionState.Closed:
-                    c = Color.Red;
-                    break;
                 default:
-                    c = Color.White;
+                    c = Color.Red;
                     break;
             }
 
