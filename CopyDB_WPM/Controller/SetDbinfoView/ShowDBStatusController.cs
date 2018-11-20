@@ -31,13 +31,13 @@ namespace CopyDB_WPM.Controller.SetDbinfoView
 
         private void SetStatusByLable(MetroLabel label, MetroTextBox textBox, MsManger db)
         {
-            var status = db.CheckConnetion();
+            ConnectionState status = db.CheckConnetion();
             label.Text = status.ToString();
-            label.BackColor = GetStatusByColor(status);
+            label.BackColor = GetColorByStatus(status);
             textBox.Text = db.GetConnetionString();
         }
 
-        private Color GetStatusByColor(ConnectionState status)
+        private Color GetColorByStatus(ConnectionState status)
         {
             Color c;
 

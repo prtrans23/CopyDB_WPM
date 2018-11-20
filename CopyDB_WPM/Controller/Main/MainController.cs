@@ -84,5 +84,16 @@ namespace CopyDB_WPM.Controller.Main
 
         }
 
+
+        #region CopyButton
+        public void OpenDataBaseCopyControl()
+        {
+            var myControl = new View.Side.DataBaseCopyControl();
+            form.metroPanel_Target.Controls.Add(myControl);
+        }
+
+
+        #endregion
+
     }
 }

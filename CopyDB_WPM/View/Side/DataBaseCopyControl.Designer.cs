@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.metroTextBox_Analyze = new MetroFramework.Controls.MetroTextBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTile_CopyOnlyData = new MetroFramework.Controls.MetroTile();
             this.metroTile_GoAnalyze = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
@@ -73,54 +73,56 @@
             this.metroTextBox_Analyze.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox_Analyze.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(23, 129);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(106, 97);
-            this.metroTile1.TabIndex = 2;
-            this.metroTile1.Text = "metroTile1";
-            this.metroTile1.UseSelectable = true;
-            // 
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
+            this.metroTile2.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile2.Location = new System.Drawing.Point(135, 129);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(106, 97);
             this.metroTile2.TabIndex = 2;
             this.metroTile2.Text = "metroTile1";
+            this.metroTile2.UseCustomBackColor = true;
+            this.metroTile2.UseCustomForeColor = true;
             this.metroTile2.UseSelectable = true;
             // 
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
+            this.metroTile3.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile3.Location = new System.Drawing.Point(247, 129);
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(106, 97);
             this.metroTile3.TabIndex = 2;
             this.metroTile3.Text = "metroTile1";
+            this.metroTile3.UseCustomBackColor = true;
+            this.metroTile3.UseCustomForeColor = true;
             this.metroTile3.UseSelectable = true;
             // 
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
+            this.metroTile4.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile4.Location = new System.Drawing.Point(359, 129);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(106, 97);
             this.metroTile4.TabIndex = 2;
             this.metroTile4.Text = "metroTile1";
+            this.metroTile4.UseCustomBackColor = true;
+            this.metroTile4.UseCustomForeColor = true;
             this.metroTile4.UseSelectable = true;
             // 
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
+            this.metroTile5.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile5.Location = new System.Drawing.Point(471, 129);
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.Size = new System.Drawing.Size(106, 97);
             this.metroTile5.TabIndex = 2;
             this.metroTile5.Text = "metroTile1";
+            this.metroTile5.UseCustomBackColor = true;
+            this.metroTile5.UseCustomForeColor = true;
             this.metroTile5.UseSelectable = true;
             // 
             // metroProgressBar1
@@ -164,6 +166,23 @@
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // metroTile_CopyOnlyData
+            // 
+            this.metroTile_CopyOnlyData.ActiveControl = null;
+            this.metroTile_CopyOnlyData.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroTile_CopyOnlyData.Location = new System.Drawing.Point(23, 129);
+            this.metroTile_CopyOnlyData.Name = "metroTile_CopyOnlyData";
+            this.metroTile_CopyOnlyData.Size = new System.Drawing.Size(106, 97);
+            this.metroTile_CopyOnlyData.TabIndex = 2;
+            this.metroTile_CopyOnlyData.Text = "Copy Only\r\nData";
+            this.metroTile_CopyOnlyData.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTile_CopyOnlyData.TileImage = global::CopyDB_WPM.Properties.Resources.icons8_copy_48;
+            this.metroTile_CopyOnlyData.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.metroTile_CopyOnlyData.UseCustomBackColor = true;
+            this.metroTile_CopyOnlyData.UseCustomForeColor = true;
+            this.metroTile_CopyOnlyData.UseSelectable = true;
+            this.metroTile_CopyOnlyData.UseTileImage = true;
+            // 
             // metroTile_GoAnalyze
             // 
             this.metroTile_GoAnalyze.ActiveControl = null;
@@ -182,6 +201,7 @@
             this.metroTile_GoAnalyze.UseCustomForeColor = true;
             this.metroTile_GoAnalyze.UseSelectable = true;
             this.metroTile_GoAnalyze.UseTileImage = true;
+            this.metroTile_GoAnalyze.Click += new System.EventHandler(this.metroTile_GoAnalyze_Click);
             // 
             // DataBaseCopyControl
             // 
@@ -192,7 +212,7 @@
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile1);
+            this.Controls.Add(this.metroTile_CopyOnlyData);
             this.Controls.Add(this.metroTile_GoAnalyze);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroTextBox_Analyze);
@@ -206,12 +226,12 @@
 
         private MetroFramework.Controls.MetroTextBox metroTextBox_Analyze;
         private MetroFramework.Controls.MetroTile metroTile_GoAnalyze;
-        private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroTile metroTile4;
-        private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        internal MetroFramework.Controls.MetroTile metroTile_CopyOnlyData;
+        internal MetroFramework.Controls.MetroTile metroTile2;
+        internal MetroFramework.Controls.MetroTile metroTile3;
+        internal MetroFramework.Controls.MetroTile metroTile4;
+        internal MetroFramework.Controls.MetroTile metroTile5;
     }
 }

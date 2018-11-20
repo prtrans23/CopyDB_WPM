@@ -59,12 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Main\MainController.cs" />
+    <Compile Include="Controller\SetDbinfoView\DataBaseCopyControllor.cs" />
     <Compile Include="Controller\SetDbinfoView\SetDbinfoViewController.cs" />
     <Compile Include="Controller\SetDbinfoView\ShowDBStatusController.cs" />
     <Compile Include="DataBase\Factory\BulkCopyOptionFactory.cs" />
     <Compile Include="DataBase\Factory\ConnetionInfoFactory.cs" />
     <Compile Include="DataBase\Model\MsConnetionInfo.cs" />
     <Compile Include="DataBase\MsManger.cs" />
+    <Compile Include="Model\SCHEMA\DatabasesInfoRepo.cs" />
+    <Compile Include="Model\SCHEMA\TableInfoRepo.cs" />
     <Compile Include="Util\ExceptionHander\ExceptionUserHander.cs" />
     <Compile Include="Util\ReadFile\ResourceFinder.cs" />
     <Compile Include="Util\ReadFile\ResourceReader.cs" />
@@ -76,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Side\DataBaseCopyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Side\DataBaseCopyControl.Designer.cs">
+      <DependentUpon>DataBaseCopyControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Side\SetDBInfoView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +104,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Side\DataBaseCopyControl.resx">
+      <DependentUpon>DataBaseCopyControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Side\SetDBInfoView.resx">
       <DependentUpon>SetDBInfoView.cs</DependentUpon>
@@ -143,10 +155,21 @@
     <None Include="Resources\icons8-data-recovery-26.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Query\" />
-    <Folder Include="Resources\Script\TSQL\" />
     <Folder Include="Resources\Script\YSQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Script\TSQL\System\InformationDblist.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Script\TSQL\System\InformationSchemaTable.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\icon\DBCopyPage\icons8-analyze-26.png" />
+    <Content Include="Resources\icon\DBCopyPage\icons8-analyze-52.png" />
+    <Content Include="Resources\icon\DBCopyPage\icons8-copy-24.png" />
+    <Content Include="Resources\icon\DBCopyPage\icons8-copy-48.png" />
+    <Content Include="Resources\icon\DBCopyPage\icons8-up-2-26.png" />
+    <Content Include="Resources\icon\DBCopyPage\icons8-up-2-52.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,6 @@
 ﻿using CopyDB_WPM.DataBase.Factory;
 using CopyDB_WPM.Util.ExceptionHander;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -78,7 +79,7 @@ namespace CopyDB_WPM.DataBase
                 dataTable = ExcuteDataTableCmd(query, connection);
             }
 
-            return null;
+            return dataTable;
         }
 
         private DataTable ExcuteDataTableCmd(string query, SqlConnection connection)
@@ -158,6 +159,15 @@ namespace CopyDB_WPM.DataBase
 
         #endregion
 
+        
+        #region Dapper
+        public object Read_Class<T>(string query)
+        {
+            SqlConnection connection = new SqlConnection(connetionString);
+            return connection.Query<T>(query);
+        }
+        #endregion
+
 
         #region Try Catch Option
         public bool Try_Write_CUD(string query)
@@ -221,6 +231,20 @@ namespace CopyDB_WPM.DataBase
             return true;
         }
 
+        public bool Try_Read_Class<T>(string query, object obj)
+        {
+            try
+            {
+                obj = Read_Class<T>(query);
+            }
+            catch (Exception e)
+            {
+                SqlExcetionUserHander(e);
+                return false;
+            }
+
+            return false;
+        }
 
 
         #endregion

@@ -22,6 +22,18 @@ namespace CopyDB_WPM.DataBase.Factory
             return model;
         }
 
+        public static Model.MsConnetionInfo GetMsOrginMasterDB()
+        {
+            Model.MsConnetionInfo model = new Model.MsConnetionInfo();
+
+            model.serverName = prop.origin_DataSource;
+            model.initialCatalog = "master";
+            model.identification = prop.origin_UserID;
+            model.password = prop.origin_Password;
+
+            return model;
+        }
+
         public static Model.MsConnetionInfo GetMsCopyDbInfo()
         {
             Model.MsConnetionInfo model = new Model.MsConnetionInfo();
@@ -33,6 +45,18 @@ namespace CopyDB_WPM.DataBase.Factory
 
             return model;
         }
+        public static Model.MsConnetionInfo GetMsCopyMasterDB()
+        {
+            Model.MsConnetionInfo model = new Model.MsConnetionInfo();
+
+            model.serverName = prop.copy_DataSource;
+            model.initialCatalog = "master";
+            model.identification = prop.copy_UserID;
+            model.password = prop.copy_Password;
+
+            return model;
+        }
+
 
 
     }

@@ -60,7 +60,8 @@ namespace CopyDB_WPM
 
         private void metroTile_Copy_Click(object sender, EventArgs e)
         {
-
+            controller.CheckAndClearView();
+            controller.OpenDataBaseCopyControl();
         }
 
         private void metroTile_CheckData_Click(object sender, EventArgs e)

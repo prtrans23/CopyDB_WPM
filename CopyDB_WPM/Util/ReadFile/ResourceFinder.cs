@@ -28,10 +28,10 @@ namespace CopyDB_WPM.Util.ReadFile
             switch (targetDocument)
             {
                 case mssql: // mssql
-                    folderPath += "\\Resource\\Script\\TSQL\\";
+                    folderPath += "\\Resources\\Script\\TSQL\\";
                     break;
                 case mysql: // mysql
-                    folderPath += "\\Resource\\Script\\YSQL\\";
+                    folderPath += "\\Resources\\Script\\YSQL\\";
                     break;
             }
 

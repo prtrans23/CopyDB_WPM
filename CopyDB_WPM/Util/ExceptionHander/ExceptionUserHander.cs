@@ -26,5 +26,10 @@ namespace CopyDB_WPM.Util.ExceptionHander
             Debug.WriteLine(e.Message);
         }
 
+        public static void NomalExcetionUserHander(Exception e)
+        {
+            Debug.WriteLine(e.Message);
+        }
+
     }
 }
