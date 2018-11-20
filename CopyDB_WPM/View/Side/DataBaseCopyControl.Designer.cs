@@ -53,8 +53,7 @@
             this.metroTextBox_Analyze.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox_Analyze.CustomButton.UseSelectable = true;
             this.metroTextBox_Analyze.CustomButton.Visible = false;
-            this.metroTextBox_Analyze.Lines = new string[] {
-        "Waiting For Analyze"};
+            this.metroTextBox_Analyze.Lines = new string[0];
             this.metroTextBox_Analyze.Location = new System.Drawing.Point(23, 22);
             this.metroTextBox_Analyze.MaxLength = 32767;
             this.metroTextBox_Analyze.Multiline = true;
@@ -68,7 +67,6 @@
             this.metroTextBox_Analyze.ShortcutsEnabled = true;
             this.metroTextBox_Analyze.Size = new System.Drawing.Size(398, 101);
             this.metroTextBox_Analyze.TabIndex = 0;
-            this.metroTextBox_Analyze.Text = "Waiting For Analyze";
             this.metroTextBox_Analyze.UseSelectable = true;
             this.metroTextBox_Analyze.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox_Analyze.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -182,6 +180,7 @@
             this.metroTile_CopyOnlyData.UseCustomForeColor = true;
             this.metroTile_CopyOnlyData.UseSelectable = true;
             this.metroTile_CopyOnlyData.UseTileImage = true;
+            this.metroTile_CopyOnlyData.Click += new System.EventHandler(this.metroTile_CopyOnlyData_Click);
             // 
             // metroTile_GoAnalyze
             // 

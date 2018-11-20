@@ -164,7 +164,7 @@ namespace CopyDB_WPM.DataBase
         public object Read_Class<T>(string query)
         {
             SqlConnection connection = new SqlConnection(connetionString);
-            return connection.Query<T>(query);
+            return connection.Query<T>(query).ToList();
         }
         #endregion
 
@@ -231,11 +231,11 @@ namespace CopyDB_WPM.DataBase
             return true;
         }
 
-        public bool Try_Read_Class<T>(string query, object obj)
+        public bool Try_Read_Class<T>(string query, List<T> obj)
         {
             try
             {
-                obj = Read_Class<T>(query);
+                obj = Read_Class<T>(query) as List<T>;
             }
             catch (Exception e)
             {

@@ -53,5 +53,21 @@ namespace CopyDB_WPM.View.Side
         {
             controller.TryAnalyze();
         }
+
+        private void metroTile_CopyOnlyData_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public void WriteAnalizeTextBox(string msg)
+        {
+            metroTextBox_Analyze.Text += msg;
+        }
+
+        public void ClearAnalizeTextBox()
+        {
+            metroTextBox_Analyze.Text = "";
+        }
     }
 }

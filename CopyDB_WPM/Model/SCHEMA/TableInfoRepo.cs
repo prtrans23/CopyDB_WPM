@@ -26,5 +26,26 @@ namespace CopyDB_WPM.Model.SCHEMA
            return db.Read_DataTable(query);
         }
 
+        public List<TableInfo> GetInformation_Class()
+        {
+            string query = ResourceReader.GetTsqlQueryFile("System", "InformationSchemaTable.sql");
+            return db.Read_Class<TableInfo>(query) as List<TableInfo>;
+        }
+
+        public DataTable GetStructInfomation_DataTable(string targetTable)
+        {
+            string query = ResourceReader.GetTsqlQueryFile("System", "InformationTableStruct.sql");
+            query = query.Replace("{targetTable}", targetTable);
+            return db.Read_DataTable(query);
+        }
+
+
+
+
+
+
+
+
+
     }
 }

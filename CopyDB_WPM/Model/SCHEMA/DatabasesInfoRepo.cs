@@ -1,5 +1,6 @@
 ﻿using CopyDB_WPM.DataBase;
 using CopyDB_WPM.DataBase.Model;
+using CopyDB_WPM.Util.ReadFile;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -33,6 +34,12 @@ namespace CopyDB_WPM.Model.SCHEMA
         {
             string query = Util.ReadFile.ResourceReader.GetTsqlQueryFile("System", "INformationDblist.sql");
             return db.Read_DataTable(query);
+        }
+
+        public List<DataBaseInfo> GetInfomation_ClassList()
+        {
+            string query = ResourceReader.GetTsqlQueryFile("System", "INformationDblist.sql");
+            return db.Read_Class<DataBaseInfo>(query) as List<DataBaseInfo>;
         }
 
     }
