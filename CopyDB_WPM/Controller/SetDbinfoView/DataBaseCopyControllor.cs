@@ -1,4 +1,5 @@
 ﻿using CopyDB_WPM.DataBase.Factory;
+using CopyDB_WPM.Model.CopyServices;
 using CopyDB_WPM.Model.SCHEMA;
 using CopyDB_WPM.Util.CheckObj;
 using CopyDB_WPM.View.Side;
@@ -164,6 +165,25 @@ namespace CopyDB_WPM.Controller.SetDbinfoView
         #endregion
 
 
+        #region Struct Copy Services
+
+        public async void StructCopyServices()
+        {
+            // Check And DataBase Copy
+            var result = await new DataBaseCopyService().CopyDataBaseTask();
+        }
+
+        #endregion
+
+
+        #region Update Status
+
+        public void UpdateStatus()
+        {
+            
+        }
+
+        #endregion
 
     }
 }
