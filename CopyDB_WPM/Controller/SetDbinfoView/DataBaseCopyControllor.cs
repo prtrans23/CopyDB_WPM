@@ -1,4 +1,5 @@
 ﻿using CopyDB_WPM.DataBase.Factory;
+using CopyDB_WPM.Model.CheckServices;
 using CopyDB_WPM.Model.CopyServices;
 using CopyDB_WPM.Model.SCHEMA;
 using CopyDB_WPM.Util.CheckObj;
@@ -9,6 +10,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CopyDB_WPM.Controller.SetDbinfoView
 {
@@ -164,6 +166,36 @@ namespace CopyDB_WPM.Controller.SetDbinfoView
 
         #endregion
 
+        #region Data Copy Services
+
+        public async void DataCopyServices()
+        {
+            // Struct Check.
+            bool result = await new TableAnalyzeService().RunTask();
+
+            if (result == false)
+            {
+                MessageBox.Show("Table structure does not match.");
+                return;
+            }
+
+            bool result2 = await new TableDataCopyServices().RunTask();
+
+            if (result == false)
+            {
+                MessageBox.Show("Update failed");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Successfully updated");
+                return;
+            }
+        }
+
+        #endregion
+
+
 
         #region Struct Copy Services
 
@@ -174,6 +206,9 @@ namespace CopyDB_WPM.Controller.SetDbinfoView
         }
 
         #endregion
+
+
+
 
 
         #region Update Status

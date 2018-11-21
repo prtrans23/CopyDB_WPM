@@ -56,7 +56,7 @@ namespace CopyDB_WPM.View.Side
 
         private void metroTile_CopyOnlyData_Click(object sender, EventArgs e)
         {
-
+            controller.DataCopyServices();
         }
 
 

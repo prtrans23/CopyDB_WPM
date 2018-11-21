@@ -62,6 +62,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\CheckServices\TableAnalyzeService.cs" />
+    <Compile Include="Model\CopyServices\DataBaseCopyService.cs" />
     <Compile Include="Controller\Main\MainController.cs" />
     <Compile Include="Controller\SetDbinfoView\DataBaseCopyControllor.cs" />
     <Compile Include="Controller\SetDbinfoView\SetDbinfoViewController.cs" />
@@ -70,6 +72,8 @@
     <Compile Include="DataBase\Factory\ConnetionInfoFactory.cs" />
     <Compile Include="DataBase\Model\MsConnetionInfo.cs" />
     <Compile Include="DataBase\MsManger.cs" />
+    <Compile Include="Model\CopyServices\TableCopyService.cs" />
+    <Compile Include="Model\CopyServices\TableDataCopyServices.cs" />
     <Compile Include="Model\SCHEMA\DataBaseInfo.cs" />
     <Compile Include="Model\SCHEMA\DatabasesInfoRepo.cs" />
     <Compile Include="Model\SCHEMA\TableInfo.cs" />
@@ -80,6 +84,8 @@
     <Compile Include="Util\InfoRam\ConnetionInfo.cs" />
     <Compile Include="Util\ReadFile\ResourceFinder.cs" />
     <Compile Include="Util\ReadFile\ResourceReader.cs" />
+    <Compile Include="Util\TaskExample\AsyncExample.cs" />
+    <Compile Include="Util\TaskExample\TaskExample.cs" />
     <Compile Include="View\Main\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Folder Include="Resources\Script\YSQL\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Script\TSQL\System\CreateDataBase.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Script\TSQL\System\InformationTableStruct.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

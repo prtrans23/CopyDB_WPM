@@ -8,7 +8,8 @@ namespace CopyDB_WPM.Util.TaskExample
 {
     class TaskExample
     {
-        public async Task Test1()
+        /*
+          public async Task Test1()
         {
             await Task.CompletedTask;
         }
@@ -41,5 +42,7 @@ namespace CopyDB_WPM.Util.TaskExample
                 }
             }));
         }
+             */
+
     }
 }
