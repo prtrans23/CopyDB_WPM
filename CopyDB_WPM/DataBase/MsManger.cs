@@ -152,7 +152,7 @@ namespace CopyDB_WPM.DataBase
 
         private void BulkCopy(DataTable dt, string targetTable, SqlConnection connection)
         {
-            SqlBulkCopy bulkCopy = BulkCopyOptionFactory.Mssql_NomalOption(connection);
+            SqlBulkCopy bulkCopy = BulkCopyOptionFactory.Mssql_NonTrigerOption(connection);
             bulkCopy.DestinationTableName = targetTable;
             bulkCopy.WriteToServer(dt);
         }

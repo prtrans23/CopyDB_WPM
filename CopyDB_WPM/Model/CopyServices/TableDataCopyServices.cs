@@ -4,6 +4,7 @@ using CopyDB_WPM.Util.ReadFile;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,12 +87,19 @@ namespace CopyDB_WPM.Model.CopyServices
         private void TruncateCopyTable(string tableName)
         {
             string query = $"TRUNCATE TABLE {tableName}";
-            cpyDb.Try_Write_CUD(query);
+
+            if (cpyDb.Try_Write_CUD(query) == false)
+            {
+                Debug.WriteLine($"Fail TRUNCATE :  {tableName} ");
+            }
         }
         
         private void UpdateCopyTable(DataTable dt, string tableName)
-        { 
-            cpyDb.Try_Write_Bulk(dt, tableName);
+        {
+            if (cpyDb.Try_Write_Bulk(dt, tableName) == false)
+            {
+                Debug.WriteLine($"Fail Write_Bulk :  {tableName} ");
+            }
         }
         
 

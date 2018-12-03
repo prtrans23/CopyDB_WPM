@@ -21,5 +21,16 @@ namespace CopyDB_WPM.DataBase.Factory
             );
         }
 
+        public static SqlBulkCopy Mssql_NonTrigerOption(SqlConnection connection)
+        {
+            return new SqlBulkCopy
+            (
+                connection,
+                SqlBulkCopyOptions.TableLock |
+                SqlBulkCopyOptions.UseInternalTransaction,
+                null
+            );
+        }
+
     }
 }
